@@ -1,0 +1,13 @@
+runs-on: self-hosted
+
+on:
+  pull_request:
+    branches:
+    - main
+    
+jobs:
+  test:
+    - name: test
+      run: |
+        docker ps
+    
