@@ -7,7 +7,8 @@ on:
     
 jobs:
   test:
-    - name: test
-      run: |
-        docker ps
+    steps:
+      - name: test
+        run: |
+          docker ps
     
