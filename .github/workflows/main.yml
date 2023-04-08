@@ -16,3 +16,8 @@ jobs:
     steps:
       - name: Validate and Compile with Maven
         run: docker ps
+      - name: Validate and Compile with Maven
+        run: ls -all
+      - name: Validate and Compile with Maven
+        run: pwd
+        
