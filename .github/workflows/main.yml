@@ -1,14 +1,16 @@
-runs-on: self-hosted
+
 
 on:
   pull_request:
     branches:
     - main
     
-jobs:
-  test:
-    steps:
-      - name: test
-        run: |
-          docker ps
     
+jobs:
+  build:
+
+    runs-on: self-hosted
+
+    steps:
+      - name: Validate and Compile with Maven
+        run: docker ps
